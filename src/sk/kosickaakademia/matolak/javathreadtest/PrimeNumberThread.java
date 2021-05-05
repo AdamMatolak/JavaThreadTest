@@ -16,11 +16,20 @@ public class PrimeNumberThread extends Thread{
         System.out.println("Running thread named " + threadName);
 
         try{
-            int number = base;
-            while (number%2 != 0){
-                number = number/2;
+            for(int i=base; i < (long)Math.pow(base,2); i++){
+                boolean isPrime = true;
+                for(int j=2; j < i ; j++){
+                    if(i % j == 0){
+                        isPrime = false;
+
+                    }
+                }
+                if(isPrime){
+                    System.out.println(i);
+                    break;
+                }
+
             }
-            System.out.println("Closest prime number to " + base + " is: " + number);
 
 
         }catch (Exception e){

@@ -10,7 +10,7 @@ public class Main {
         MyThread thread2 = new MyThread("Thread 2",4);
         thread2.start();*/
 
-        PrimeNumberThread pnt = new PrimeNumberThread("primeThread",4564893);
+        PrimeNumberThread pnt = new PrimeNumberThread("primeThread",5499631);
         pnt.start();
 
     }
