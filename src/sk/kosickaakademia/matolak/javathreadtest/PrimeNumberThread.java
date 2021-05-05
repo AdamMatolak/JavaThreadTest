@@ -25,7 +25,7 @@ public class PrimeNumberThread extends Thread{
                     }
                 }
                 if(isPrime){
-                    System.out.println(i);
+                    System.out.println("Closest prime number is: " + i);
                     break;
                 }
 
